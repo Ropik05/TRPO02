@@ -5,6 +5,8 @@ VisualStudioVersion = 17.3.32825.248
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TRPO-lab", "TRPO-lab\TRPO-lab.csproj", "{3AD22ED8-B04F-4CE7-9546-C0B4702F37F5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Сlass", "Сlass\Сlass.csproj", "{3CB00BC0-810C-4C15-B0C8-42ACC03C0648}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{3AD22ED8-B04F-4CE7-9546-C0B4702F37F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3AD22ED8-B04F-4CE7-9546-C0B4702F37F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3AD22ED8-B04F-4CE7-9546-C0B4702F37F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CB00BC0-810C-4C15-B0C8-42ACC03C0648}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CB00BC0-810C-4C15-B0C8-42ACC03C0648}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CB00BC0-810C-4C15-B0C8-42ACC03C0648}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CB00BC0-810C-4C15-B0C8-42ACC03C0648}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
