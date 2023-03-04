@@ -4,30 +4,30 @@ using System.Runtime.InteropServices;
 
 // Общие сведения об этой сборке предоставляются следующим набором
 // набора атрибутов. Измените значения этих атрибутов для изменения сведений,
-// связанные с этой сборкой.
-[assembly: AssemblyTitle("TRPO-lab")]
+// связанные со сборкой.
+[assembly: AssemblyTitle("ClassLibrary1")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("TRPO-lab")]
+[assembly: AssemblyProduct("ClassLibrary1")]
 [assembly: AssemblyCopyright("Copyright ©  2023")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
 // Установка значения False для параметра ComVisible делает типы в этой сборке невидимыми
 // для компонентов COM. Если необходимо обратиться к типу в этой сборке через
-// из модели COM задайте для атрибута ComVisible этого типа значение true.
+// COM, задайте атрибуту ComVisible значение TRUE для этого типа.
 [assembly: ComVisible(false)]
 
-// Следующий GUID представляет идентификатор typelib, если этот проект доступен из модели COM
-[assembly: Guid("3ad22ed8-b04f-4ce7-9546-c0b4702f37f5")]
+// Следующий GUID служит для идентификации библиотеки типов, если этот проект будет видимым для COM
+[assembly: Guid("34991656-e0a5-4612-b481-ddf2ebf66446")]
 
 // Сведения о версии сборки состоят из указанных ниже четырех значений:
 //
 //      Основной номер версии
 //      Дополнительный номер версии
 //      Номер сборки
-//      Номер редакции
+//      Редакция
 //
 // Можно задать все значения или принять номера сборки и редакции по умолчанию 
 // используя "*", как показано ниже:
