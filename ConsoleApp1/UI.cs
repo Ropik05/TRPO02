@@ -25,5 +25,15 @@ namespace ConsoleApp1
         {
 
         }
+        public static void Print(Должность должность)
+        {
+            Console.WriteLine($"Должность.Название = {должность.Название}");
+            Console.WriteLine($"Должность.Оклад = {должность.Оклад}");
+            Print(должность.подразделение);
+        }
+        public static void Print(Подразделение подразделение)
+        {
+
+        }
     }
 }

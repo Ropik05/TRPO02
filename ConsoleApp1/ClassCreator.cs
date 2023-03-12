@@ -27,5 +27,17 @@ namespace ConsoleApp1
         {
             return new ClassC();
         }
+        public static Должность Должность()
+        {
+            Console.Write("Введите название: ");
+            string название = Console.ReadLine();
+            Console.Write("Введите оклад: ");
+            string оклад = Console.ReadLine();
+            return new Должность(название, оклад, Подразделение());
+        }
+        public static Подразделение Подразделение()
+        {
+            return new Подразделение();
+        }
     }
 }
