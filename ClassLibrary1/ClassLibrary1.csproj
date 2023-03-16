@@ -41,6 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Оборудование.cs" />
+    <Compile Include="Сотрудники.cs" />
+    <Compile Include="Аудитория.cs" />
     <Compile Include="ClassA.cs" />
     <Compile Include="ClassB.cs" />
     <Compile Include="ClassC.cs" />
