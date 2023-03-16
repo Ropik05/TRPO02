@@ -25,5 +25,10 @@ namespace ConsoleApp1
         {
 
         }
+        public static void Print(Var3_Дисциплина Дисциплина)
+        {
+            Console.WriteLine($"Var3_Дисциплина Название = {Дисциплина.Название}");
+            Console.WriteLine($"Var3_Дисциплина Сокращение = {Дисциплина.Сокращение}");
+        }
     }
 }
