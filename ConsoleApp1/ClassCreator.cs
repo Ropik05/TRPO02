@@ -27,5 +27,13 @@ namespace ConsoleApp1
         {
             return new ClassC();
         }
+        public static Var3_Дисциплина Дисциплина()
+        {
+            Console.Write("Введите название: ");
+            string название = Console.ReadLine();
+            Console.Write("Введите сокращение: ");
+            string сокращение = Console.ReadLine();
+            return new Var3_Дисциплина(название,сокращение);
+        }
     }
 }
