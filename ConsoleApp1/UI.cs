@@ -14,7 +14,16 @@ namespace ConsoleApp1
             Console.WriteLine($"ClassA.Name={classA.Name}");
             Console.WriteLine($"ClassA.LastName={classA.LastName}");
         }
-        public static void Print(Var6_Специальность специальность)
+        public static void Print(Var4_Группа группа)
+        {
+            Console.WriteLine($"Группа.Название = {группа.Название_группы}");
+            Console.WriteLine($"Группа.сокращение = {группа.Сокращение}");
+            Console.WriteLine($"Группа.численность = {группа.Численность}");
+            Console.WriteLine($"Группа.год поступление = {группа.Год_поступления}");
+            Print(группа.Сотрудники);
+            Print(группа.Специальность);
+        }
+        public static void Print(Var6_Специальность cпециальность)
         {
 
         }

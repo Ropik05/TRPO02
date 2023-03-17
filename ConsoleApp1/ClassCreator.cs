@@ -29,13 +29,28 @@ namespace ConsoleApp1
         }
         public static Var4_Группа Группа()
         {
-            Console.WriteLine("Ввидите название группы");
-            string название = Console.ReadLine();
-            Console.WriteLine("Ввидите сокращение");
-            string сокращение = Console.ReadLine();
-            Console.WriteLine("Введите численность");
-            int численность = int.Parse(Console.ReadLine());
-            return new Var4_Группа(название, сокращение, численность, Сотрудники(), Специальность());
+            while(true) 
+            {
+
+                try
+                {
+
+
+                    Console.WriteLine("Ввидите название группы");
+                    string название = Console.ReadLine();
+                    Console.WriteLine("Ввидите сокращение");
+                    string сокращение = Console.ReadLine();
+                    Console.WriteLine("Введите численность");
+                    int численность = int.Parse(Console.ReadLine());
+                    Console.WriteLine("Ввидите год поступление");
+                    int год_поступления = int.Parse(Console.ReadLine());
+                    return new Var4_Группа(название, сокращение, численность, год_поступления, Сотрудники(), Специальность());
+                }
+                catch
+                {
+                    Console.WriteLine("Введена ошибка");
+                }
+            }
 
         }
         public static Var6_Специальность Специальность()
