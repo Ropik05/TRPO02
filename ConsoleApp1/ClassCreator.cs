@@ -10,6 +10,30 @@ namespace ConsoleApp1
 {
     static class ClassCreator
     {
+        public static Var12_Организация Организация()
+        {
+            while (true)
+            {
+
+                try
+                {
+                    Console.WriteLine("Ввeдите название организации.");
+                    string название = Console.ReadLine();
+
+                    Console.WriteLine("Введите юридический адрес организации.");
+                    string юридический_адрес = Console.ReadLine();
+
+                    Console.WriteLine("Введите фактический адрес организации.");
+                    string фактический_адрес = Console.ReadLine();
+
+                    return new Var12_Организация(название, юридический_адрес, фактический_адрес, Сотрудники());
+                }
+                catch
+                {
+                    Console.WriteLine("Введена ошибка!");
+                }
+            }
+        }
         public static Var5_Студент Студент()
         {
             Console.WriteLine("Введите фамилия");
@@ -75,7 +99,9 @@ namespace ConsoleApp1
         }
         public static Var8_Смена Смена()
         {
-            return new Var8_Смена();
+            Console.Write("Введите название: ");
+            string название = Console.ReadLine();
+            return new Var8_Смена(название);
         }
         public static Var9_Сотрудники Сотрудники()
         {
