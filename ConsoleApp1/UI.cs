@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,6 +10,14 @@ namespace ConsoleApp1
 {
     static class UI
     {
+        public static void Print(Var5_Студент Студент)
+        {
+            Console.WriteLine($"Студент.Фамилия = {Студент.Фамилия}");
+            Console.WriteLine($"Студент.Имя = {Студент.Имя}");
+            Console.WriteLine($"Студент.Отчество = {Студент.Отчество}");
+            Print(Студент.Группа);
+            Console.WriteLine($"Студент.Дата_Рождения = {Студент.Дата_Рождения}");
+        }
         public static void Print(Var4_Группа группа)
         {
             Console.WriteLine($"Группа.Название = {группа.Название_группы}");
