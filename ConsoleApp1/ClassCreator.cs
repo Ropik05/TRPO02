@@ -27,6 +27,21 @@ namespace ConsoleApp1
         {
             return new ClassC();
         }
+        public static Var4_Группа Группа()
+        {
+            Console.WriteLine("Ввидите название группы");
+            string название = Console.ReadLine();
+            Console.WriteLine("Ввидите сокращение");
+            string сокращение = Console.ReadLine();
+            Console.WriteLine("Введите численность");
+            int численность = int.Parse(Console.ReadLine());
+            return new Var4_Группа(название, сокращение, численность, Сотрудники(), Специальность());
+
+        }
+        public static Var6_Специальность Специальность()
+        {
+            return new Var6_Специальность();
+        }
         public static Var3_Дисциплина Дисциплина()
         {
             Console.Write("Введите название: ");
