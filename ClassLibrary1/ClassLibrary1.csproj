@@ -46,6 +46,7 @@
     <Compile Include="Var2_Аудитория.cs" />
     <Compile Include="Var3_Должность.cs" />
     <Compile Include="Var4_Группа.cs" />
+    <Compile Include="Var5_Студент.cs" />
     <Compile Include="Var6_Специальность.cs" />
     <Compile Include="Var9_Сотрудники.cs" />
   </ItemGroup>
