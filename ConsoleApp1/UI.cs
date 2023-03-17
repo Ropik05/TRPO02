@@ -14,6 +14,10 @@ namespace ConsoleApp1
             Console.WriteLine($"ClassA.Name={classA.Name}");
             Console.WriteLine($"ClassA.LastName={classA.LastName}");
         }
+        public static void Print(Var6_Специальность специальность)
+        {
+
+        }
 
         public static void Print(ClassB classB)
         {

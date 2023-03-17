@@ -19,6 +19,7 @@ namespace ConsoleApp1
                     case "ClassB": UI.Print(ClassCreator.ClassB()); break;
                     case "Аудитория": UI.Print(ClassCreator.Аудитория()); break;
                     case "Дисциплина": UI.Print(ClassCreator.Дисциплина()); break;
+                    case "Группа": UI.Print(ClassCreator.Группа()); break;
                     default: Console.WriteLine("Этот класс не реализован"); break;
                 }
             }
