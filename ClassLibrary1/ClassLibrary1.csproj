@@ -48,6 +48,8 @@
     <Compile Include="Var4_Группа.cs" />
     <Compile Include="Var5_Студент.cs" />
     <Compile Include="Var6_Специальность.cs" />
+    <Compile Include="Var7_Пара.cs" />
+    <Compile Include="Var8_Смена.cs" />
     <Compile Include="Var9_Сотрудники.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
