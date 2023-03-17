@@ -9,11 +9,6 @@ namespace ConsoleApp1
 {
     static class UI
     {
-        public static void Print(ClassA classA)
-        {
-            Console.WriteLine($"ClassA.Name={classA.Name}");
-            Console.WriteLine($"ClassA.LastName={classA.LastName}");
-        }
         public static void Print(Var4_Группа группа)
         {
             Console.WriteLine($"Группа.Название = {группа.Название_группы}");
@@ -24,17 +19,6 @@ namespace ConsoleApp1
             Print(группа.Специальность);
         }
         public static void Print(Var6_Специальность cпециальность)
-        {
-
-        }
-
-        public static void Print(ClassB classB)
-        {
-            Print(classB.ClassA);
-            Print(classB.ClassC);
-        }
-
-        public static void Print(ClassC classC)
         {
 
         }
