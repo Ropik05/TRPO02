@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -35,8 +36,30 @@ namespace ConsoleApp1
             string сокращение = Console.ReadLine();
             Console.WriteLine("Введите численность");
             int численность = int.Parse(Console.ReadLine());
-            return new Var4_Группа(название, сокращение, численность, Сотрудники(), Специальность());
-
+            Console.WriteLine("Введите год поступления");
+            int год_поступления = int.Parse(Console.ReadLine());
+            return new Var4_Группа(название, сокращение, численность,год_поступления, Сотрудники(), Специальность());
+        }
+        public static var5_Студент Студент()
+        {
+                Console.WriteLine("Введите фамилия");
+                string фамилия = Console.ReadLine();
+                Console.WriteLine("Введите имя");
+                string имя = Console.ReadLine();
+                Console.WriteLine("Введите отчество");
+                string отчество = Console.ReadLine();
+                Console.WriteLine("Введите дату рождения в формате dd.mm.yyyy");
+                string дата_Рождения = Console.ReadLine();
+                while (!DateTime.TryParseExact(дата_Рождения, "dd.mm.yyyy", DateTimeFormatInfo.InvariantInfo, DateTimeStyles.None, out DateTime дата) && дата_Рождения != "")
+                {
+                    Console.WriteLine("Введите дату рождения в формате dd.mm.yyyy");
+                    дата_Рождения = Console.ReadLine();
+                }
+                if (дата_Рождения == "")
+                {
+                дата_Рождения = DateTime.Now.ToShortDateString();
+            }
+            return new var5_Студент(фамилия, имя, отчество, Группа(), дата_Рождения);
         }
         public static Var6_Специальность Специальность()
         {

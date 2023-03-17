@@ -9,6 +9,23 @@ namespace ConsoleApp1
 {
     static class UI
     {
+        public static void Print(var5_Студент Студент)
+        {
+            Console.WriteLine($"Студент.Фамилия = {Студент.Фамилия}");
+            Console.WriteLine($"Студент.Имя = {Студент.Имя}");
+            Console.WriteLine($"Студент.Отчество = {Студент.Отчество}");
+            Print(Студент.Группа);
+            Console.WriteLine($"Студент.Дата_Рождения = {Студент.Дата_Рождения}");
+        }
+        public static void Print(Var4_Группа Группа)
+        {
+            Console.WriteLine($"Студент.Название = {Группа.Название_группы}");
+            Console.WriteLine($"Студент.Сокращение = {Группа.Сокращение}");
+            Console.WriteLine($"Студент.Численность = {Группа.Численность}");
+            Console.WriteLine($"Студент.Год_поступления = {Группа.Год_поступления}");
+            Print(Группа.Специальность);
+            Print(Группа.Сотрудники);
+        }
         public static void Print(ClassA classA)
         {
             Console.WriteLine($"ClassA.Name={classA.Name}");
