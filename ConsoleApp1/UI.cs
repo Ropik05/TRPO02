@@ -10,6 +10,14 @@ namespace ConsoleApp1
 {
     static class UI
     {
+        public static void Print(Var12_Организация организация)
+        {
+            Console.WriteLine($"организация.Название = {организация.Название}");
+            Console.WriteLine($"организация.Юридический_адрес = {организация.Юридический_адрес}");
+            Console.WriteLine($"организация.Фактический_адрес= {организация.Фактический_адрес}");
+            Print(организация.Руководитель);
+        }
+
         public static void Print(Var5_Студент Студент)
         {
             Console.WriteLine($"Студент.Фамилия = {Студент.Фамилия}");
