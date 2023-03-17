@@ -99,7 +99,9 @@ namespace ConsoleApp1
         }
         public static Var8_Смена Смена()
         {
-            return new Var8_Смена();
+            Console.Write("Введите название: ");
+            string название = Console.ReadLine();
+            return new Var8_Смена(название);
         }
         public static Var9_Сотрудники Сотрудники()
         {
