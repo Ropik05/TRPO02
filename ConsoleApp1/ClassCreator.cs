@@ -107,6 +107,21 @@ namespace ConsoleApp1
         {
             return new Var_9Сотрудники();
         }
+
+        public static Var10_Должность Должность()
+        {
+            Console.Write("Введите название: ");
+            string название = Console.ReadLine();
+            Console.Write("Введите оклад: ");
+            string оклад = Console.ReadLine();
+            return new Var10_Должность(название, оклад, Подразделение());
+        }
+        public static Var11_Подразделение Подразделение()
+        {
+            return new Var11_Подразделение();
+        }
+
+
         public static Var2_Аудитория Аудитория()
         {
             while (true)
