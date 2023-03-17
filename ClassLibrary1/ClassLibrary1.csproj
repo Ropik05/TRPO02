@@ -42,6 +42,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Var10_Должность.cs" />
+    <Compile Include="Var11_Подразделение.cs" />
     <Compile Include="Var15_Оборудование.cs" />
     <Compile Include="Var2_Аудитория.cs" />
     <Compile Include="Var3_Должность.cs" />
