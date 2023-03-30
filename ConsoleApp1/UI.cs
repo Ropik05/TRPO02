@@ -73,7 +73,9 @@ namespace ConsoleApp1
         }
         public static void Print(Var11_Подразделение подразделение)
         {
-
+            Console.WriteLine($"Var12_Подразделение Название_Подразделения = {подразделение.Название_подразделения}");
+            Print(подразделение.Сотрудники);
+            Print(подразделение.Организация);
         }
 
         public static void Print(Var7_Пара пара)
