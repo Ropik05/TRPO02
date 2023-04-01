@@ -10,75 +10,75 @@ namespace ConsoleApp1
 {
     static class UI
     {
-        public static void Print(Var12_Организация организация)
+        public static void Print(Var12Организация организация)
         {
             Console.WriteLine($"организация.Название = {организация.Название}");
-            Console.WriteLine($"организация.Юридический_адрес = {организация.Юридический_адрес}");
-            Console.WriteLine($"организация.Фактический_адрес= {организация.Фактический_адрес}");
+            Console.WriteLine($"организация.Юридическийадрес = {организация.Юридическийадрес}");
+            Console.WriteLine($"организация.Фактическийадрес= {организация.Фактическийадрес}");
             Print(организация.Руководитель);
         }
 
-        public static void Print(Var5_Студент Студент)
+        public static void Print(Var5Студент Студент)
         {
             Console.WriteLine($"Студент.Фамилия = {Студент.Фамилия}");
             Console.WriteLine($"Студент.Имя = {Студент.Имя}");
             Console.WriteLine($"Студент.Отчество = {Студент.Отчество}");
             Print(Студент.Группа);
-            Console.WriteLine($"Студент.Дата_Рождения = {Студент.Дата_Рождения}");
+            Console.WriteLine($"Студент.ДатаРождения = {Студент.ДатаРождения}");
         }
-        public static void Print(Var4_Группа группа)
+        public static void Print(Var4Группа группа)
         {
-            Console.WriteLine($"Группа.Название = {группа.Название_группы}");
+            Console.WriteLine($"Группа.Название = {группа.Названиегруппы}");
             Console.WriteLine($"Группа.сокращение = {группа.Сокращение}");
             Console.WriteLine($"Группа.численность = {группа.Численность}");
-            Console.WriteLine($"Группа.год поступление = {группа.Год_поступления}");
+            Console.WriteLine($"Группа.год поступление = {группа.Годпоступления}");
             Print(группа.Сотрудники);
             Print(группа.Специальность);
         }
-        public static void Print(Var6_Специальность cпециальность)
+        public static void Print(Var6Специальность cпециальность)
         {
 
         }
-        public static void Print(Var15_Оборудование оборудование)
+        public static void Print(Var15Оборудование оборудование)
         {
 
         }
-        public static void Print(Var8_Смена смена)
+        public static void Print(Var8Смена смена)
         {
-            Console.WriteLine($"Var8_Смена Название = {смена.Название}");
+            Console.WriteLine($"Var8Смена Название = {смена.Название}");
         }
-        public static void Print(Var9_Сотрудники сотрудники)
+        public static void Print(Var9Сотрудники сотрудники)
         {
 
         }
-        public static void Print(Var3_Дисциплина Дисциплина)
+        public static void Print(Var3Дисциплина Дисциплина)
         {
-            Console.WriteLine($"Var3_Дисциплина Название = {Дисциплина.Название}");
-            Console.WriteLine($"Var3_Дисциплина Сокращение = {Дисциплина.Сокращение}");
+            Console.WriteLine($"Var3Дисциплина Название = {Дисциплина.Название}");
+            Console.WriteLine($"Var3Дисциплина Сокращение = {Дисциплина.Сокращение}");
         }
-        public static void Print(Var2_Аудитория аудитория)
+        public static void Print(Var2Аудитория аудитория)
         {
-            Console.WriteLine($"Аудитория.Название_Аудитории={аудитория.Название_Аудитории}");
+            Console.WriteLine($"Аудитория.НазваниеАудитории={аудитория.НазваниеАудитории}");
             Print(аудитория.Сотрудники);
-            Console.WriteLine($"Аудитория.Количество_Мест={аудитория.Количество_Мест}");
-            Console.WriteLine($"Аудитория.Количество_Окон={аудитория.Количество_Окон}");
+            Console.WriteLine($"Аудитория.КоличествоМест={аудитория.КоличествоМест}");
+            Console.WriteLine($"Аудитория.КоличествоОкон={аудитория.КоличествоОкон}");
             Print(аудитория.Оборудование);
         }
 
-        public static void Print(Var10_Должность должность)
+        public static void Print(Var10Должность должность)
         {
             Console.WriteLine($"Должность.Название = {должность.Название}");
             Console.WriteLine($"Должность.Оклад = {должность.Оклад}");
             Print(должность.подразделение);
         }
-        public static void Print(Var11_Подразделение подразделение)
+        public static void Print(Var11Подразделение подразделение)
         {
-            Console.WriteLine($"Var12_Подразделение Название_Подразделения = {подразделение.Название_подразделения}");
+            Console.WriteLine($"Var12Подразделение НазваниеПодразделения = {подразделение.Названиеподразделения}");
             Print(подразделение.Сотрудники);
             Print(подразделение.Организация);
         }
 
-        public static void Print(Var7_Пара пара)
+        public static void Print(Var7Пара пара)
         {
             Console.WriteLine("Время начала пары = " + (пара.ЧасыНачалаПары < 10 ? "0" : "") + пара.ЧасыНачалаПары + ":" + (пара.МинутыНачалаПары < 10 ? "0" : "") + пара.МинутыНачалаПары);
             Console.WriteLine("Время начала пары = " + (пара.ЧасыКонцаПары < 10 ? "0" : "") + пара.ЧасыКонцаПары + ":" + (пара.МинутыКонцаПары < 10 ? "0" : "") + пара.МинутыКонцаПары);

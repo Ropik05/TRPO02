@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace ClassLibrary1
 {
-    //Ссылка: https://docs.google.com/document/d/1r4OjKXg5_5yj6ibHB778UEF5Z1nbUqGdXjpQXbTGWiQ/edit?usp=share_link
-    public class Var7_Пара
+    //Ссылка: https://docs.google.com/document/d/1r4OjKXg55yj6ibHB778UEF5Z1nbUqGdXjpQXbTGWiQ/edit?usp=sharelink
+    public class Var7Пара
     {
         public int ЧасыНачалаПары { get; }
         public int МинутыНачалаПары { get; }
@@ -17,9 +17,9 @@ namespace ClassLibrary1
         public int МинутыНачалаПерерыва { get; }
         public int ЧасыКонцаПерерыва { get; }
         public int МинутыКонцаПерерыва { get; }
-        public Var8_Смена Смена { get; }
-        public Var7_Пара(int часыНачалаПары, int минутыНачалаПары, int часыКонцаПары, int минутыКонцаПары,
-            int часыНачалаПерерыва, int минутыНачалаПерерыва, int часыКонцаПерерыва, int минутыКонцаПерерыва, Var8_Смена смена)
+        public Var8Смена Смена { get; }
+        public Var7Пара(int часыНачалаПары, int минутыНачалаПары, int часыКонцаПары, int минутыКонцаПары,
+            int часыНачалаПерерыва, int минутыНачалаПерерыва, int часыКонцаПерерыва, int минутыКонцаПерерыва, Var8Смена смена)
         {
             ЧасыНачалаПары = часыНачалаПары;
             МинутыНачалаПары = минутыНачалаПары;

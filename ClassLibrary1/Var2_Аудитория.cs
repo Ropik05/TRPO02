@@ -6,22 +6,22 @@ using System.Threading.Tasks;
 
 namespace ClassLibrary1
 {
-    //Ссылка: https://docs.google.com/document/d/10XwtkjNB6-lRehWP_7qbgWC1nn_oIpa28ezyPXX3B28/edit?usp=share_link
-    public class Var2_Аудитория
+    //Ссылка: https://docs.google.com/document/d/10XwtkjNB6-lRehWP7qbgWC1nnoIpa28ezyPXX3B28/edit?usp=sharelink
+    public class Var2Аудитория
     {
 
-            public int Название_Аудитории { get; }
-            public Var9_Сотрудники Сотрудники { get; }
-            public int Количество_Мест { get; }
-            public int Количество_Окон { get; }
-            public Var15_Оборудование Оборудование { get; }
+            public int НазваниеАудитории { get; }
+            public Var9Сотрудники Сотрудники { get; }
+            public int КоличествоМест { get; }
+            public int КоличествоОкон { get; }
+            public Var15Оборудование Оборудование { get; }
 
-            public Var2_Аудитория(int название_Аудитории, Var9_Сотрудники сотрудники, int количество_Мест, int количество_Окон, Var15_Оборудование оборудование)
+            public Var2Аудитория(int названиеАудитории, Var9Сотрудники сотрудники, int количествоМест, int количествоОкон, Var15Оборудование оборудование)
             {
-                Название_Аудитории = название_Аудитории;
+                НазваниеАудитории = названиеАудитории;
                 Сотрудники = сотрудники;
-                Количество_Мест = количество_Мест;
-                Количество_Окон = количество_Окон;
+                КоличествоМест = количествоМест;
+                КоличествоОкон = количествоОкон;
                 Оборудование = оборудование;
             }
     }

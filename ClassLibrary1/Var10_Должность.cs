@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace ClassLibrary1
 {
-    //Ссылка: https://docs.google.com/document/d/1yBWzXRuxmOQiPQs9TyNx8tNgq6nWF42Sjn-mgT_-5nY/edit?usp=share_link
-    public class Var10_Должность
+    //Ссылка: https://docs.google.com/document/d/1yBWzXRuxmOQiPQs9TyNx8tNgq6nWF42Sjn-mgT-5nY/edit?usp=sharelink
+    public class Var10Должность
     {
         public string Название { get; }
         public string Оклад { get; }
-        public Var11_Подразделение подразделение { get; }
-        public Var10_Должность(string название, string оклад, Var11_Подразделение подразделение)
+        public Var11Подразделение подразделение { get; }
+        public Var10Должность(string название, string оклад, Var11Подразделение подразделение)
         {
             Название = название;
             Оклад = оклад;

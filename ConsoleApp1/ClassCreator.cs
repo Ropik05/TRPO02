@@ -10,7 +10,7 @@ namespace ConsoleApp1
 {
     static class ClassCreator
     {
-        public static Var12_Организация Организация()
+        public static Var12Организация Организация()
         {
             while (true)
             {
@@ -21,12 +21,12 @@ namespace ConsoleApp1
                     string название = Console.ReadLine();
 
                     Console.WriteLine("Введите юридический адрес организации.");
-                    string юридический_адрес = Console.ReadLine();
+                    string юридическийадрес = Console.ReadLine();
 
                     Console.WriteLine("Введите фактический адрес организации.");
-                    string фактический_адрес = Console.ReadLine();
+                    string фактическийадрес = Console.ReadLine();
 
-                    return new Var12_Организация(название, юридический_адрес, фактический_адрес, Сотрудники());
+                    return new Var12Организация(название, юридическийадрес, фактическийадрес, Сотрудники());
                 }
                 catch
                 {
@@ -34,7 +34,7 @@ namespace ConsoleApp1
                 }
             }
         }
-        public static Var5_Студент Студент()
+        public static Var5Студент Студент()
         {
             Console.WriteLine("Введите фамилия");
             string фамилия = Console.ReadLine();
@@ -43,19 +43,19 @@ namespace ConsoleApp1
             Console.WriteLine("Введите отчество");
             string отчество = Console.ReadLine();
             Console.WriteLine("Введите дату рождения в формате dd.mm.yyyy");
-            string дата_Рождения = Console.ReadLine();
-            while (!DateTime.TryParseExact(дата_Рождения, "dd.mm.yyyy", DateTimeFormatInfo.InvariantInfo, DateTimeStyles.None, out DateTime дата) && дата_Рождения != "")
+            string датаРождения = Console.ReadLine();
+            while (!DateTime.TryParseExact(датаРождения, "dd.mm.yyyy", DateTimeFormatInfo.InvariantInfo, DateTimeStyles.None, out DateTime дата) && датаРождения != "")
             {
                 Console.WriteLine("Введите дату рождения в формате dd.mm.yyyy");
-                дата_Рождения = Console.ReadLine();
+                датаРождения = Console.ReadLine();
             }
-            if (дата_Рождения == "")
+            if (датаРождения == "")
             {
-                дата_Рождения = DateTime.Now.ToShortDateString();
+                датаРождения = DateTime.Now.ToShortDateString();
             }
-            return new Var5_Студент(фамилия, имя, отчество, Группа(), дата_Рождения);
+            return new Var5Студент(фамилия, имя, отчество, Группа(), датаРождения);
         }
-        public static Var4_Группа Группа()
+        public static Var4Группа Группа()
         {
             while(true) 
             {
@@ -71,8 +71,8 @@ namespace ConsoleApp1
                     Console.WriteLine("Введите численность");
                     int численность = int.Parse(Console.ReadLine());
                     Console.WriteLine("Ввидите год поступление");
-                    int год_поступления = int.Parse(Console.ReadLine());
-                    return new Var4_Группа(название, сокращение, численность, год_поступления, Сотрудники(), Специальность());
+                    int годпоступления = int.Parse(Console.ReadLine());
+                    return new Var4Группа(название, сокращение, численность, годпоступления, Сотрудники(), Специальность());
                 }
                 catch
                 {
@@ -81,62 +81,62 @@ namespace ConsoleApp1
             }
 
         }
-        public static Var6_Специальность Специальность()
+        public static Var6Специальность Специальность()
         {
-            return new Var6_Специальность();
+            return new Var6Специальность();
         }
-        public static Var3_Дисциплина Дисциплина()
+        public static Var3Дисциплина Дисциплина()
         {
             Console.Write("Введите название: ");
             string название = Console.ReadLine();
             Console.Write("Введите сокращение: ");
             string сокращение = Console.ReadLine();
-            return new Var3_Дисциплина(название,сокращение);
+            return new Var3Дисциплина(название,сокращение);
         }
-        public static Var15_Оборудование Оборудование()
+        public static Var15Оборудование Оборудование()
         {
-            return new Var15_Оборудование();
+            return new Var15Оборудование();
         }
-        public static Var8_Смена Смена()
+        public static Var8Смена Смена()
         {
             Console.Write("Введите название: ");
             string название = Console.ReadLine();
-            return new Var8_Смена(название);
+            return new Var8Смена(название);
         }
-        public static Var9_Сотрудники Сотрудники()
+        public static Var9Сотрудники Сотрудники()
         {
-            return new Var_9Сотрудники();
+            return new Var9Сотрудники();
         }
 
-        public static Var10_Должность Должность()
+        public static Var10Должность Должность()
         {
             Console.Write("Введите название: ");
             string название = Console.ReadLine();
             Console.Write("Введите оклад: ");
             string оклад = Console.ReadLine();
-            return new Var10_Должность(название, оклад, Подразделение());
+            return new Var10Должность(название, оклад, Подразделение());
         }
-        public static Var11_Подразделение Подразделение()
+        public static Var11Подразделение Подразделение()
         {
             Console.Write("Введите название подразделения ");
-            string название_подразделения = Console.ReadLine();
-            return new Var11_Подразделение(название_подразделения, Сотрудники(), Организация());
+            string названиеподразделения = Console.ReadLine();
+            return new Var11Подразделение(названиеподразделения, Сотрудники(), Организация());
         }
 
 
-        public static Var2_Аудитория Аудитория()
+        public static Var2Аудитория Аудитория()
         {
             while (true)
             {
                 try
                 {
                     Console.WriteLine($"Введите название аудитории: ");
-                    int название_Аудитории = int.Parse(Console.ReadLine());
+                    int названиеАудитории = int.Parse(Console.ReadLine());
                     Console.WriteLine($"Введите кол-во мест в  аудитории: ");
-                    int количество_Мест = int.Parse(Console.ReadLine());
+                    int количествоМест = int.Parse(Console.ReadLine());
                     Console.WriteLine($"Введите кол-во окон в аудитории: ");
-                    int количество_Окон = int.Parse(Console.ReadLine());
-                    return new Var2_Аудитория(название_Аудитории, Сотрудники(), количество_Мест, количество_Окон, Оборудование());
+                    int количествоОкон = int.Parse(Console.ReadLine());
+                    return new Var2Аудитория(названиеАудитории, Сотрудники(), количествоМест, количествоОкон, Оборудование());
                 }
                 catch
                 {
@@ -144,7 +144,7 @@ namespace ConsoleApp1
                 }
             }
         }
-        public static Var7_Пара Пара()
+        public static Var7Пара Пара()
         {
             Console.WriteLine($"Введите часы начала пары: ");
             if (int.TryParse(Console.ReadLine(), out int ЧасыНачалаПары))
@@ -258,12 +258,8 @@ namespace ConsoleApp1
                 Console.WriteLine($"Неверно введено время, установлено текущее");
                 МинутыКонцаПерерыва = DateTime.Now.Minute;
             }
-            return new Var7_Пара(ЧасыНачалаПары, МинутыНачалаПары, ЧасыКонцаПары, МинутыКонцаПары,
+            return new Var7Пара(ЧасыНачалаПары, МинутыНачалаПары, ЧасыКонцаПары, МинутыКонцаПары,
                 ЧасыНачалаПерерыва, МинутыНачалаПерерыва, ЧасыКонцаПерерыва, МинутыКонцаПерерыва, Смена());
         }
-    }
-
-    internal class Var_9Сотрудники : Var9_Сотрудники
-    {
     }
 }

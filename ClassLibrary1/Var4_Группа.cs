@@ -6,21 +6,21 @@ using System.Threading.Tasks;
 
 namespace ClassLibrary1
 {
-    //Ссылка: https://docs.google.com/document/d/1qZEaADy71rJCOuNSTpyhh-f-NhSL2a6DCm88EgFO20o/edit?usp=share_link
-    public class Var4_Группа
+    //Ссылка: https://docs.google.com/document/d/1qZEaADy71rJCOuNSTpyhh-f-NhSL2a6DCm88EgFO20o/edit?usp=sharelink
+    public class Var4Группа
     {
-       public string Название_группы { get; }
+       public string Названиегруппы { get; }
         public string Сокращение { get; }
         public int Численность { get; }
-        public int Год_поступления { get; }
-        public Var9_Сотрудники Сотрудники { get; }
-        public Var6_Специальность Специальность { get; }
-        public Var4_Группа(string название_группы, string сокращение, int численность, int год_поступления, Var9_Сотрудники сотрудники, Var6_Специальность специальность)
+        public int Годпоступления { get; }
+        public Var9Сотрудники Сотрудники { get; }
+        public Var6Специальность Специальность { get; }
+        public Var4Группа(string названиегруппы, string сокращение, int численность, int годпоступления, Var9Сотрудники сотрудники, Var6Специальность специальность)
         {
-            Название_группы = название_группы;
+            Названиегруппы = названиегруппы;
             Сокращение = сокращение;
             Численность = численность;
-            Год_поступления = год_поступления;
+            Годпоступления = годпоступления;
             Сотрудники = сотрудники;
             Специальность = специальность;
         }
