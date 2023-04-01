@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace ClassLibrary1
 {
+    //Ссылка: https://docs.google.com/document/d/1FrtPd2tz85cDVhZCYXqL0wrByPjNbd6kUbjXzOzfLPc/edit?usp=share_link
     public class Var5_Студент
     {
         public string Фамилия { get; }

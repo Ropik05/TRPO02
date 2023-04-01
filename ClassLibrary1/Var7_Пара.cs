@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace ClassLibrary1
 {
+    //Ссылка: https://docs.google.com/document/d/1r4OjKXg5_5yj6ibHB778UEF5Z1nbUqGdXjpQXbTGWiQ/edit?usp=share_link
     public class Var7_Пара
     {
         public int ЧасыНачалаПары { get; }

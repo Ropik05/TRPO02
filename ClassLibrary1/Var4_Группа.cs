@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace ClassLibrary1
 {
-   public class Var4_Группа
+    //Ссылка: https://docs.google.com/document/d/1qZEaADy71rJCOuNSTpyhh-f-NhSL2a6DCm88EgFO20o/edit?usp=share_link
+    public class Var4_Группа
     {
        public string Название_группы { get; }
         public string Сокращение { get; }
