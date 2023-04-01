@@ -9,26 +9,45 @@ namespace ClassLibrary1
     //Ссылка: https://docs.google.com/document/d/1r4OjKXg55yj6ibHB778UEF5Z1nbUqGdXjpQXbTGWiQ/edit?usp=sharelink
     public class Var7Пара
     {
-        public int ЧасыНачалаПары { get; }
-        public int МинутыНачалаПары { get; }
-        public int ЧасыКонцаПары { get; }
-        public int МинутыКонцаПары { get; }
-        public int ЧасыНачалаПерерыва { get; }
-        public int МинутыНачалаПерерыва { get; }
-        public int ЧасыКонцаПерерыва { get; }
-        public int МинутыКонцаПерерыва { get; }
+        public DateTime ВремяНачалаПары { get; }
+        public DateTime ВремяОкончанияПары { get; }
+        public DateTime ВремяНачалаПерерыва { get; }
+        public DateTime ВремяОкончанияПерерыва { get; }
         public Var8Смена Смена { get; }
-        public Var7Пара(int часыНачалаПары, int минутыНачалаПары, int часыКонцаПары, int минутыКонцаПары,
-            int часыНачалаПерерыва, int минутыНачалаПерерыва, int часыКонцаПерерыва, int минутыКонцаПерерыва, Var8Смена смена)
+        public Var7Пара(string времяНачалаПары, string времяОкончанияПары, string времяНачалаПерерыва, string времяОкончанияПерерыва, Var8Смена смена)
         {
-            ЧасыНачалаПары = часыНачалаПары;
-            МинутыНачалаПары = минутыНачалаПары;
-            ЧасыКонцаПары = часыКонцаПары;
-            МинутыКонцаПары = минутыКонцаПары;
-            ЧасыНачалаПерерыва = часыНачалаПерерыва;
-            МинутыНачалаПерерыва = минутыНачалаПерерыва;
-            ЧасыКонцаПерерыва = часыКонцаПерерыва;
-            МинутыКонцаПерерыва = минутыКонцаПерерыва;
+            if ((DateTime.TryParse(времяНачалаПары, out DateTime StartTimePara)) && (времяНачалаПары != ""))
+            {
+                ВремяНачалаПары = StartTimePara;
+            }
+            else
+            {
+                ВремяНачалаПары = DateTime.Now;
+            }
+            if ((DateTime.TryParse(времяОкончанияПары, out DateTime EndTimePara)) && (времяОкончанияПары != ""))
+            {
+                ВремяОкончанияПары = EndTimePara;
+            }
+            else
+            {
+                ВремяОкончанияПары = DateTime.Now;
+            }
+            if ((DateTime.TryParse(времяНачалаПерерыва, out DateTime StartTimePereriv)) && (времяНачалаПерерыва != ""))
+            {
+                ВремяНачалаПерерыва = StartTimePereriv;
+            }
+            else
+            {
+                ВремяНачалаПерерыва = DateTime.Now;
+            }
+            if ((DateTime.TryParse(времяОкончанияПерерыва, out DateTime EndTimePereriv)) && (времяОкончанияПерерыва != ""))
+            {
+                ВремяОкончанияПерерыва = EndTimePereriv;
+            }
+            else
+            {
+                ВремяОкончанияПерерыва = DateTime.Now;
+            }
             Смена = смена;
         }
     }
