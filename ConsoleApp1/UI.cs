@@ -28,11 +28,11 @@ namespace ConsoleApp1
         }
         public static void Print(Var4Группа группа)
         {
-            Console.WriteLine($"Группа.Название = {группа.Названиегруппы}");
+            Console.WriteLine($"Группа.Название = {группа.НазваниеГруппы}");
             Console.WriteLine($"Группа.сокращение = {группа.Сокращение}");
             Console.WriteLine($"Группа.численность = {группа.Численность}");
             Console.WriteLine($"Группа.год поступление = {группа.Годпоступления}");
-            Print(группа.Сотрудники);
+            Print(группа.КлассныйРуководитель);
             Print(группа.Специальность);
         }
         public static void Print(Var6Специальность cпециальность)

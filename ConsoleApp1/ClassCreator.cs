@@ -76,7 +76,7 @@ namespace ConsoleApp1
                 }
                 catch
                 {
-                    Console.WriteLine("Введена ошибка");
+                    Console.WriteLine("Введенны неверные данные");
                 }
             }
 
