@@ -113,7 +113,7 @@ namespace ConsoleApp1
             Console.Write("Введите название: ");
             string название = Console.ReadLine();
             Console.Write("Введите оклад: ");
-            string оклад = Console.ReadLine();
+            decimal оклад = Convert.ToDecimal(Console.ReadLine());
             return new Var10Должность(название, оклад, Подразделение());
         }
         public static Var11Подразделение Подразделение()

@@ -10,13 +10,13 @@ namespace ClassLibrary1
     public class Var10Должность
     {
         public string Название { get; }
-        public string Оклад { get; }
-        public Var11Подразделение подразделение { get; }
-        public Var10Должность(string название, string оклад, Var11Подразделение подразделение)
+        public decimal Оклад { get; }
+        public Var11Подразделение Подразделение { get; }
+        public Var10Должность(string название, decimal оклад, Var11Подразделение подразделение)
         {
             Название = название;
             Оклад = оклад;
-            this.подразделение = подразделение;
+            Подразделение = подразделение;
         }
     }
 

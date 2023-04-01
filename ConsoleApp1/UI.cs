@@ -69,7 +69,7 @@ namespace ConsoleApp1
         {
             Console.WriteLine($"Должность.Название = {должность.Название}");
             Console.WriteLine($"Должность.Оклад = {должность.Оклад}");
-            Print(должность.подразделение);
+            Print(должность.Подразделение);
         }
         public static void Print(Var11Подразделение подразделение)
         {
