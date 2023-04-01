@@ -21,12 +21,12 @@ namespace ConsoleApp1
                     string название = Console.ReadLine();
 
                     Console.WriteLine("Введите юридический адрес организации.");
-                    string юридическийадрес = Console.ReadLine();
+                    string юридическийАдрес = Console.ReadLine();
 
                     Console.WriteLine("Введите фактический адрес организации.");
-                    string фактическийадрес = Console.ReadLine();
+                    string фактическийАдрес = Console.ReadLine();
 
-                    return new Var12Организация(название, юридическийадрес, фактическийадрес, Сотрудники());
+                    return new Var12Организация(название, юридическийАдрес, фактическийАдрес, Сотрудник());
                 }
                 catch
                 {
@@ -72,7 +72,7 @@ namespace ConsoleApp1
                     int численность = int.Parse(Console.ReadLine());
                     Console.WriteLine("Ввидите год поступление");
                     int годпоступления = int.Parse(Console.ReadLine());
-                    return new Var4Группа(название, сокращение, численность, годпоступления, Сотрудники(), Специальность());
+                    return new Var4Группа(название, сокращение, численность, годпоступления, Сотрудник(), Специальность());
                 }
                 catch
                 {
@@ -103,7 +103,7 @@ namespace ConsoleApp1
             string название = Console.ReadLine();
             return new Var8Смена(название);
         }
-        public static Var9Сотрудник Сотрудники()
+        public static Var9Сотрудник Сотрудник()
         {
             return new Var9Сотрудник();
         }
@@ -120,7 +120,7 @@ namespace ConsoleApp1
         {
             Console.Write("Введите название подразделения ");
             string названиеподразделения = Console.ReadLine();
-            return new Var11Подразделение(названиеподразделения, Сотрудники(), Организация());
+            return new Var11Подразделение(названиеподразделения, Сотрудник(), Организация());
         }
 
 
@@ -136,7 +136,7 @@ namespace ConsoleApp1
                     int количествоМест = int.Parse(Console.ReadLine());
                     Console.WriteLine($"Введите кол-во окон в аудитории: ");
                     int количествоОкон = int.Parse(Console.ReadLine());
-                    return new Var2Аудитория(названиеАудитории, Сотрудники(), количествоМест, количествоОкон, Оборудование());
+                    return new Var2Аудитория(названиеАудитории, Сотрудник(), количествоМест, количествоОкон, Оборудование());
                 }
                 catch
                 {
