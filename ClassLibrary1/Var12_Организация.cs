@@ -12,9 +12,9 @@ namespace ClassLibrary1
         public string Название { get; }
         public string Юридическийадрес { get; }
         public string Фактическийадрес { get; }
-        public Var9Сотрудники Руководитель { get; }
+        public Var9Сотрудник Руководитель { get; }
 
-        public Var12Организация(string название, string юридическийадрес, string фактическийадрес, Var9Сотрудники руководитель)
+        public Var12Организация(string название, string юридическийадрес, string фактическийадрес, Var9Сотрудник руководитель)
         {
             Название = название;
             Юридическийадрес = юридическийадрес;

@@ -103,9 +103,9 @@ namespace ConsoleApp1
             string название = Console.ReadLine();
             return new Var8Смена(название);
         }
-        public static Var9Сотрудники Сотрудники()
+        public static Var9Сотрудник Сотрудники()
         {
-            return new Var9Сотрудники();
+            return new Var9Сотрудник();
         }
 
         public static Var10Должность Должность()

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace ClassLibrary1
 {
     //Ссылка: https://docs.google.com/document/d/1dhWsZqo-d1x4uk0y45lDVnu4H91wRvpRWKJ0lfCizxY/edit?usp=sharelink
-    public class Var9Сотрудники
+    public class Var9Сотрудник
     {
     }
 }
