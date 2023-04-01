@@ -112,9 +112,19 @@ namespace ConsoleApp1
         {
             Console.Write("Введите название: ");
             string название = Console.ReadLine();
-            Console.Write("Введите оклад: ");
-            decimal оклад = Convert.ToDecimal(Console.ReadLine());
-            return new Var10Должность(название, оклад, Подразделение());
+            while (true)
+            {
+                try
+                {
+                    Console.Write("Введите оклад: ");
+                    decimal оклад = decimal.Parse(Console.ReadLine());
+                    return new Var10Должность(название, оклад, Подразделение());
+                }
+                catch
+                {
+                    Console.WriteLine("Неверно введён оклад");
+                }
+            }
         }
         public static Var11Подразделение Подразделение()
         {
