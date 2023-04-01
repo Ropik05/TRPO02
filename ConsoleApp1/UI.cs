@@ -47,9 +47,12 @@ namespace ConsoleApp1
         {
             Console.WriteLine($"Var8Смена Название = {смена.Название}");
         }
-        public static void Print(Var9Сотрудник сотрудники)
+        public static void Print(Var9Сотрудник Сотрудник)
         {
-
+            Console.WriteLine($"Var9Сотрудник Фамилия = {Сотрудник.Фамилия}");
+            Console.WriteLine($"Var9Сотрудник Имя = {Сотрудник.Имя}");
+            Console.WriteLine($"Var9Сотрудник Отчество = {Сотрудник.Отчество}");
+            Print(Сотрудник.Должность);
         }
         public static void Print(Var3Дисциплина Дисциплина)
         {
