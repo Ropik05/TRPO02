@@ -105,7 +105,13 @@ namespace ConsoleApp1
         }
         public static Var9Сотрудник Сотрудник()
         {
-            return new Var9Сотрудник();
+            Console.Write("Введите фамилию: ");
+            string фамилия = Console.ReadLine();
+            Console.Write("Введите имя: ");
+            string имя = Console.ReadLine();
+            Console.Write("Введите отчество: ");
+            string отчество = Console.ReadLine();
+            return new Var9Сотрудник(фамилия, имя, отчество, Должность());
         }
 
         public static Var10Должность Должность()
