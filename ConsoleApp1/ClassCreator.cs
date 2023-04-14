@@ -162,16 +162,16 @@ namespace ConsoleApp1
         public static Var7Пара Пара()
         {
             {
-                Console.WriteLine($"Введите время начала пары в формате (##:##): ");
-                string ВремяНачалаПары = Console.ReadLine();
-                Console.WriteLine($"Введите время окончания пары в формате (##:##): ");
-                string ВремяОкончанияПары = Console.ReadLine();
-                Console.WriteLine($"Введите время начала перерыва в формате (##:##): ");
+                Console.WriteLine($"Введите время начала пары в формате (HH:mm): ");
+                string ВремяНачала = Console.ReadLine();
+                Console.WriteLine($"Введите время окончания пары в формате (HH:mm): ");
+                string ВремяОкончания = Console.ReadLine();
+                Console.WriteLine($"Введите время начала перерыва в формате (HH:mm): ");
                 string ВремяНачалаПерерыва = Console.ReadLine();
-                Console.WriteLine($"Введите время окончания перерыва в формате (##:##): ");
+                Console.WriteLine($"Введите время окончания перерыва в формате (HH:mm): ");
                 string ВремяОкончанияПерерыва = Console.ReadLine();
 
-                return new Var7Пара(ВремяНачалаПары, ВремяОкончанияПары, ВремяНачалаПерерыва, ВремяОкончанияПерерыва, Смена());
+                return new Var7Пара(ВремяНачала, ВремяОкончания, ВремяНачалаПерерыва, ВремяОкончанияПерерыва, Смена());
             }
         }
     }
