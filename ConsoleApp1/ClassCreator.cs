@@ -44,15 +44,6 @@ namespace ConsoleApp1
             string отчество = Console.ReadLine();
             Console.WriteLine("Введите дату рождения в формате dd.mm.yyyy");
             string датаРождения = Console.ReadLine();
-            while (!DateTime.TryParseExact(датаРождения, "dd.mm.yyyy", DateTimeFormatInfo.InvariantInfo, DateTimeStyles.None, out _) && датаРождения != "")
-            {
-                Console.WriteLine("Введите дату рождения в формате dd.mm.yyyy");
-                датаРождения = Console.ReadLine();
-            }
-            if (датаРождения == "")
-            {
-                датаРождения = DateTime.Now.ToShortDateString();
-            }
             return new Var5Студент(фамилия, имя, отчество, Группа(), датаРождения);
         }
         public static Var4Группа Группа()

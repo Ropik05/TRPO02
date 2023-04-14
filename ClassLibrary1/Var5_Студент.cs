@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,7 +20,11 @@ namespace ClassLibrary1
             Фамилия = фамилия;
             Имя = имя;
             Отчество = отчество;
-            ДатаРождения = датаРождения;
+            if (DateTime.TryParseExact(датаРождения, "dd.MM.yyyy", DateTimeFormatInfo.InvariantInfo, DateTimeStyles.None, out DateTime DateOfBirth))
+            {
+                ДатаРождения = DateOfBirth.ToString("dd.MM.yyyy");
+            }
+            else ДатаРождения = DateTime.Now.ToShortDateString();
             Группа = группа;
         }
     }
