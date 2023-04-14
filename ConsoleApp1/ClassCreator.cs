@@ -128,9 +128,9 @@ namespace ConsoleApp1
         }
         public static Var11Подразделение Подразделение()
         {
-            Console.Write("Введите название подразделения ");
-            string названиеподразделения = Console.ReadLine();
-            return new Var11Подразделение(названиеподразделения, Сотрудник(), Организация());
+            Console.WriteLine("Введите название подразделения ");
+            string название = Console.ReadLine();
+            return new Var11Подразделение(название, Сотрудник(), Организация());
         }
 
 
