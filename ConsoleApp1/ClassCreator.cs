@@ -149,9 +149,9 @@ namespace ConsoleApp1
                     Console.WriteLine($"Введите название аудитории: ");
                     string название = Console.ReadLine();
                     Console.WriteLine($"Введите кол-во мест в  аудитории: ");
-                    uint количествоМест = uint.Parse(Console.ReadLine());
+                    byte количествоМест = byte.Parse(Console.ReadLine());
                     Console.WriteLine($"Введите кол-во окон в аудитории: ");
-                    uint количествоОкон = uint.Parse(Console.ReadLine());
+                    byte количествоОкон = byte.Parse(Console.ReadLine());
                     List<Var15Оборудование> оборудование = new List<Var15Оборудование>();
                     for (int i = 0; i < 5; i++)
                     {
