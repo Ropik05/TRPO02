@@ -15,41 +15,15 @@ namespace ClassLibrary1
         public TimeSpan ВремяНачалаПерерыва { get; }
         public TimeSpan ВремяОкончанияПерерыва { get; }
         public Var8Смена Смена { get; }
-        public Var7Пара(string времяНачала, string времяОкончания, string времяНачалаПерерыва, string времяОкончанияПерерыва, Var8Смена смена)
+        public Var7Пара(TimeSpan времяНачала, TimeSpan времяОкончания, TimeSpan времяНачалаПерерыва, TimeSpan времяОкончанияПерерыва, Var8Смена смена)
         {
-            if ((времяНачала != "") && (TimeSpan.TryParse(времяНачала, out TimeSpan StartTimePara)))
             {
-                ВремяНачала = StartTimePara;
+                ВремяНачала = времяНачала;
+                ВремяОкончания = времяОкончания;
+                ВремяНачалаПерерыва = времяНачалаПерерыва;
+                ВремяОкончанияПерерыва = времяОкончанияПерерыва;
+                Смена = смена;
             }
-            else
-            {
-                ВремяНачала = DateTime.Now.TimeOfDay;
-            }
-            if ((времяОкончания != "") && (TimeSpan.TryParse(времяОкончания, out TimeSpan EndTimePara)))
-            {
-                ВремяОкончания = EndTimePara;
-            }
-            else
-            {
-                ВремяОкончания = DateTime.Now.TimeOfDay;
-            }
-            if ((времяНачалаПерерыва != "") && (TimeSpan.TryParse(времяНачалаПерерыва, out TimeSpan StartTimePereriv)))
-            {
-                ВремяНачалаПерерыва = StartTimePereriv;
-            }
-            else
-            {
-                ВремяНачалаПерерыва = DateTime.Now.TimeOfDay;
-            }
-            if ((времяОкончанияПерерыва != "") && (TimeSpan.TryParse(времяОкончанияПерерыва, out TimeSpan EndTimePereriv)))
-            {
-                ВремяОкончанияПерерыва = EndTimePereriv;
-            }
-            else
-            {
-                ВремяОкончанияПерерыва = DateTime.Now.TimeOfDay;
-            }
-            Смена = смена;
         }
     } 
 }

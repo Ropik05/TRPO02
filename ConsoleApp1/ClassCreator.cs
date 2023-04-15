@@ -176,8 +176,23 @@ namespace ConsoleApp1
                 string ВремяНачалаПерерыва = Console.ReadLine();
                 Console.WriteLine($"Введите время окончания перерыва в формате (HH:mm): ");
                 string ВремяОкончанияПерерыва = Console.ReadLine();
-
-                return new Var7Пара(ВремяНачала, ВремяОкончания, ВремяНачалаПерерыва, ВремяОкончанияПерерыва, Смена());
+                if (!((ВремяНачала != "") && (TimeSpan.TryParse(ВремяНачала, out TimeSpan StartTimePara))))
+                {
+                    StartTimePara = DateTime.Now.TimeOfDay;
+                }
+                if (!((ВремяОкончания != "") && (TimeSpan.TryParse(ВремяОкончания, out TimeSpan EndTimePara))))
+                {
+                    EndTimePara = DateTime.Now.TimeOfDay;
+                }
+                if (!((ВремяНачалаПерерыва != "") && (TimeSpan.TryParse(ВремяНачалаПерерыва, out TimeSpan StartTimePereriv))))
+                {
+                    StartTimePereriv = DateTime.Now.TimeOfDay;
+                }
+                if (!((ВремяОкончанияПерерыва != "") && (TimeSpan.TryParse(ВремяОкончанияПерерыва, out TimeSpan EndTimePereriv))))
+                {
+                    EndTimePereriv = DateTime.Now.TimeOfDay;
+                }
+                return new Var7Пара(StartTimePara, EndTimePara, StartTimePereriv, EndTimePereriv, Смена());
             }
         }
     }
