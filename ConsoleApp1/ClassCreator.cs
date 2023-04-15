@@ -167,33 +167,31 @@ namespace ConsoleApp1
         }
         public static Var7Пара Пара()
         {
+            Console.WriteLine($"Введите время начала пары в формате (HH:mm): ");
+            string ВремяНачала = Console.ReadLine();
+            Console.WriteLine($"Введите время окончания пары в формате (HH:mm): ");
+            string ВремяОкончания = Console.ReadLine();
+            Console.WriteLine($"Введите время начала перерыва в формате (HH:mm): ");
+            string ВремяНачалаПерерыва = Console.ReadLine();
+            Console.WriteLine($"Введите время окончания перерыва в формате (HH:mm): ");
+            string ВремяОкончанияПерерыва = Console.ReadLine();
+            if (!((ВремяНачала != "") && (TimeSpan.TryParse(ВремяНачала, out TimeSpan StartTimePara))))
             {
-                Console.WriteLine($"Введите время начала пары в формате (HH:mm): ");
-                string ВремяНачала = Console.ReadLine();
-                Console.WriteLine($"Введите время окончания пары в формате (HH:mm): ");
-                string ВремяОкончания = Console.ReadLine();
-                Console.WriteLine($"Введите время начала перерыва в формате (HH:mm): ");
-                string ВремяНачалаПерерыва = Console.ReadLine();
-                Console.WriteLine($"Введите время окончания перерыва в формате (HH:mm): ");
-                string ВремяОкончанияПерерыва = Console.ReadLine();
-                if (!((ВремяНачала != "") && (TimeSpan.TryParse(ВремяНачала, out TimeSpan StartTimePara))))
-                {
-                    StartTimePara = DateTime.Now.TimeOfDay;
-                }
-                if (!((ВремяОкончания != "") && (TimeSpan.TryParse(ВремяОкончания, out TimeSpan EndTimePara))))
-                {
-                    EndTimePara = DateTime.Now.TimeOfDay;
-                }
-                if (!((ВремяНачалаПерерыва != "") && (TimeSpan.TryParse(ВремяНачалаПерерыва, out TimeSpan StartTimePereriv))))
-                {
-                    StartTimePereriv = DateTime.Now.TimeOfDay;
-                }
-                if (!((ВремяОкончанияПерерыва != "") && (TimeSpan.TryParse(ВремяОкончанияПерерыва, out TimeSpan EndTimePereriv))))
-                {
-                    EndTimePereriv = DateTime.Now.TimeOfDay;
-                }
-                return new Var7Пара(StartTimePara, EndTimePara, StartTimePereriv, EndTimePereriv, Смена());
+                StartTimePara = DateTime.Now.TimeOfDay;
             }
+            if (!((ВремяОкончания != "") && (TimeSpan.TryParse(ВремяОкончания, out TimeSpan EndTimePara))))
+            {
+                EndTimePara = DateTime.Now.TimeOfDay;
+            }
+            if (!((ВремяНачалаПерерыва != "") && (TimeSpan.TryParse(ВремяНачалаПерерыва, out TimeSpan StartTimePereriv))))
+            {
+                StartTimePereriv = DateTime.Now.TimeOfDay;
+            }
+            if (!((ВремяОкончанияПерерыва != "") && (TimeSpan.TryParse(ВремяОкончанияПерерыва, out TimeSpan EndTimePereriv))))
+            {
+                EndTimePereriv = DateTime.Now.TimeOfDay;
+            }
+            return new Var7Пара(StartTimePara, EndTimePara, StartTimePereriv, EndTimePereriv, Смена());
         }
     }
 }
