@@ -147,17 +147,17 @@ namespace ConsoleApp1
                 try
                 {
                     Console.WriteLine($"Введите название аудитории: ");
-                    int названиеАудитории = int.Parse(Console.ReadLine());
+                    string название = Console.ReadLine();
                     Console.WriteLine($"Введите кол-во мест в  аудитории: ");
-                    int количествоМест = int.Parse(Console.ReadLine());
+                    uint количествоМест = uint.Parse(Console.ReadLine());
                     Console.WriteLine($"Введите кол-во окон в аудитории: ");
-                    int количествоОкон = int.Parse(Console.ReadLine());
+                    uint количествоОкон = uint.Parse(Console.ReadLine());
                     List<Var15Оборудование> оборудование = new List<Var15Оборудование>();
                     for (int i = 0; i < 5; i++)
                     {
                         оборудование.Add(new Var15Оборудование() { });
                     }
-                    return new Var2Аудитория(названиеАудитории, Сотрудник(), количествоМест, количествоОкон, оборудование);
+                    return new Var2Аудитория(название, Сотрудник(), количествоМест, количествоОкон, оборудование);
                 }
                 catch
                 {
